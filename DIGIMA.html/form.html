@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM REGISTRATION</title>
+</head>
+<body>
+    <h1>FORM REGISTRATION</h1>
+        <p style="text-align: left;">If you would like to sell your event tickets through our website, please fill out the form below.</p>
+    <form action="form.html">
+        <label for="Nama Event">Nama Event:</label>
+        <input type="text" id="eventName" placeholder="Nama Event" required>
+        <br><br>
+        <label for="Name">Nama Penyelenggara:</label>
+        <input type="text" id="Nama" placeholder="Nama Penyelenggara:" required>
+        <br><br>
+        <label for="Email">E-mail:</label>
+        <input type="email" id="email" placeholder="Email Aktif">
+        <br><br>
+        <label for="date">Tanggal Event:</label>
+        <input type="date" id="date" required>
+        <br><br>
+        <label for="time">Waktu Mulai:</label>
+        <input type="time" id="time" name="time" required>
+        <br><br>
+        <label for="category">Kategori Event:</label>
+        <select id="category" name="category" required>
+            <option value="">-- Pilih Kategori --</option>
+            <option value="musik">Musik</option>
+            <option value="seminar">Seminar</option>
+            <option value="olahraga">Olahraga</option>
+            <option value="hiburan">Hiburan</option>
+            <option value="lainnya">Lainnya</option>
+        </select>
+        <br><br>
+        <label for="price">Harga Tiket (Rp):</label>
+        <input type="number" id="price" name="price" required min="0">
+        <br><br>
+        <label for="quota">Kapasitas Tiket:</label>
+        <input type="number" id="quota" name="quota" required min="1">
+        <br><br>
+        <label for="poster">Link Poster Event (opsional):</label>
+        <input type="url" id="poster" name="poster">
+        <br><br>
+        <button type="submit">Daftarkan Event</button>
+    </form>
+</body>
+</html>

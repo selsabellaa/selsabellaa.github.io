@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PRIMAEDU</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding-top: 60px;
+      background-color: #f4faff;
+    }
+
+    nav {
+      background-color: #003366;
+      width: 100%;
+      height: 60px;
+      color: #ffffff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-items ul li {
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .nav-items ul li:hover {
+      color: #a8d0ff;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .auth-buttons button {
+      padding: 6px 14px;
+      border: none;
+      border-radius: 5px;
+      background-color: #66b2ff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .auth-buttons button:hover {
+      background-color: #3399ff;
+    }
+
+    .banner {
+      height: 350px;
+      background: linear-gradient(to right, #0059b3, #3399ff);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    .wrapper h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .wrapper p {
+      font-size: 18px;
+    }
+
+    .wrapper button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: white;
+      color: #0059b3;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .wrapper button:hover {
+      background-color: #cce6ff;
+    }
+
+    .wrapper button a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    article {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px 10%;
+      background-color: #ffffff;
+      gap: 40px;
+    }
+
+    .article1 {
+      flex: 3;
+      min-width: 300px;
+    }
+
+    .article1 h2 {
+      margin-bottom: 15px;
+      color: #003366;
+    }
+
+    .article1 p {
+      text-align: justify;
+      margin-bottom: 10px;
+    }
+
+    .image {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image figure {
+      margin: 10px 0;
+    }
+
+    .article-list {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .article-list h3 {
+      margin-bottom: 15px;
+      color: #003366;
+    }
+
+    .list-artikel li {
+      margin-bottom: 20px;
+    }
+
+    .list-artikel a {
+      color: #0059b3;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .list-artikel a:hover {
+      text-decoration: underline;
+    }
+
+    .list-artikel p {
+      margin-top: 5px;
+      color: #333;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-items">
+      <div class="logo">Prima Edu</div>
+      <ul class="menu">
+        <li>Home</li>
+        <li>Blog</li>
+        <li>Contact</li>
+        <li>About</li>
+      </ul>
+      <div class="auth-buttons">
+        <button>Sign In</button>
+        <button>Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="wrapper">
+      <h1>Selamat Datang di PrimaEdu</h1>
+      <p>Gabung bersama kami untuk belajar dengan metode terbaik dan pengajar profesional.</p>
+      <button><a href="#main-content">Lihat Info</a></button>
+    </div>
+  </div>
+
+  <!-- Artikel -->
+  <article id="main-content">
+    <div class="article1">
+      <h2>Program Les di PrimaEdu</h2>
+      <p>Kami menawarkan beragam program les yang dirancang khusus untuk berbagai kelompok usia, mulai dari anak-anak, remaja, hingga orang dewasa. Setiap program disusun secara terstruktur dan disesuaikan dengan tingkat perkembangan dan kebutuhan belajar masing-masing peserta.</p>
+      <div class="image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhtf4tSFwY61WnyVhv9eQJr2ZjDqi_Vfnyug&s" alt="Ilustrasi Belajar" width="100%" style="max-width: 500px;">
+        <figure><strong>Gambar:</strong> Dokumentasi</figure>
+      </div>
+      <p>Dengan fasilitas yang lengkap dan suasana belajar yang kondusif, kami menciptakan lingkungan ideal untuk pembelajaran. Pengajar kami berkompeten dan komunikatif, membuat pengalaman belajar menjadi lebih menyenangkan dan efektif.</p>
+    </div>
+    <div class="article-list">
+      <h3>Artikel Terkait</h3>
+      <ul class="list-artikel">
+        <li>
+          <a href="#">Cara Belajar Efektif</a>
+          <p>Tips agar belajar jadi lebih fokus dan hasil maksimal.</p>
+        </li>
+        <li>
+          <a href="#">Kenali Gaya Belajarmu</a>
+          <p>Visual, auditori, atau kinestetik? Temukan caramu!</p>
+        </li>
+        <li>
+          <a href="#">Pentingnya Bimbingan Belajar</a>
+          <p>Bagaimana les dapat meningkatkan prestasi akademik.</p>
+        </li>
+      </ul>
+    </div>
+  </article>
+</body>
+</html>

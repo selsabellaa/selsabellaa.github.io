@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoldenCinema</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: #111;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #FFD700 !important;
+    }
+
+    .nav-link:hover {
+      color: #ffffff !important;
+    }
+
+    .btn-warning {
+      background-color: #FFD700;
+      border: 1px solid transparent;
+      color: #000 !important;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-warning:hover {
+      background-color: #000 !important;
+      color: #FFD700 !important;
+      border: 1px solid #FFD700;
+    }
+
+    .banner {
+      background: url('https://images.unsplash.com/photo-1606813909227-2cf565b4dd0d') center/cover no-repeat;
+      height: 350px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .banner .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .card {
+      background-color: #111;
+      color: #e0e0e0;
+      border: 1px solid #FFD700;
+    }
+
+    .card-img-top {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #000;
+      color: #e0e0e0;
+      padding: 15px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    form label {
+      color: #FFD700;
+    }
+
+    form input, form select {
+      background-color: #111;
+      color: #fff;
+      border: 1px solid #FFD700;
+    }
+
+    form input::placeholder {
+      color: #999;
+    }
+
+    .carousel {
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    .carousel img {
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid #FFD700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">GoldenCinema</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#film">Film</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Jadwal</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <button class="btn btn-warning btn-sm">Login</button>
+          <button class="btn btn-warning btn-sm">Register</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+<section class="banner">
+    <div class="container">
+        <h1 class="display-4">Selamat Datang di GoldenCinema</h1>
+        <p class="lead">Nikmati pengalaman baru dalam memesan tiket film favoritmu dengan cara yang jauh lebih mudah, cepat, dan bebas repot.</p>
+        <a href="#film" class="btn btn-warning mt-3">Lihat Film</a>
+    </div>
+</section>
+
+  <!-- Film Populer -->
+  <section id="film" class="container py-5">
+    <h2 class="mb-4">Film Populer</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://static.promediateknologi.id/crop/103x135:1079x1041/0x0/webp/photo/p2/205/2025/05/13/SnapInstato_494040780_17849056812451280_2108485267410522501_n-1339958163.jpg" class="card-img-top" alt="Comedy">
+          <div class="card-body">
+            <h5 class="card-title">GJLS Ibuku ibu-ibu</h5>
+            <p class="card-text">Tak ingin jatah warisan mereka berkurang - Rigen, Hifdzi, dan Rispo, tiga kakak beradik yang tak memiliki arah hidup jelas, bekerja sama menyusun rencana untuk menggagalkan pernikahan ayah mereka, Tyo, dengan Feni, si SPG muda penghuni rumah kos.</p>
+            <a href="#" class="btn btn-warning w-100">Pesan Tiket</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://indotimur.com/images/2024/10/preview_dr5hxd9r_enbjili7.jpg" class="card-img-top" alt="Horror">
+          <div class="card-body">
+            <h5 class="card-title">Petaka Gunung Gede</h5>
+            <p class="card-text">Ita dan Maya, dua sahabat yang sedang mendaki Gunung Gede, tiba-tiba mengalami kejadian tak terduga, gara-gara Ita melanggar sebuah mitos. Di saat orang-orang menyalahkan Ita, Maya bertekad untuk mencari jawaban demi menyelamatkan nyawa sahabatnya.</p>
+            <a href="#" class="btn btn-warning w-100">Pesan Tiket</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images07.kaleidescape.com/transformed/covers/450x642s/493/49382222.jpg" class="card-img-top" alt="Actiom">
+          <div class="card-body">
+            <h5 class="card-title">From the World of John Wick: Ballerina</h5>
+            <p class="card-text">mengisahkan Eve, seorang penari balet muda yang dilatih dalam tradisi Ruska Roma, organisasi pembunuh bayaran yang sama dengan John Wick. Setelah keluarganya dibunuh secara misterius, Eve memulai misi balas dendam yang brutal.</p>
+            <a href="#" class="btn btn-warning w-100">Pesan Tiket</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Pemesanan Tiket -->
+  <section class="container py-4" id="pesan">
+    <h2 class="mb-4">Pesan Tiket</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama Lengkap</label>
+        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+      </div>
+      <div class="mb-3">
+        <label for="film" class="form-label">Pilih Film</label>
+        <select class="form-select" id="film">
+          <option>GJLS Ibuku ibu-ibu</option>
+          <option>Petaka Gunung Gede</option>
+          <option>From the World of John Wick: Ballerina</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="jadwal" class="form-label">Pilih Jadwal</label>
+        <input type="datetime-local" class="form-control" id="jadwal">
+      </div>
+      <div class="mb-3">
+        <label for="jumlah" class="form-label">Jumlah Tiket</label>
+        <input type="number" class="form-control" id="jumlah" min="1" value="1">
+      </div>
+      <button type="submit" class="btn btn-warning">Pesan Sekarang</button>
+    </form>
+  </section>
+
+  <!-- Carousel Promo -->
+<div id="promoCarousel" class="carousel slide mt-5 mx-auto" data-bs-ride="carousel" style="max-width: 600px;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://kaltimtoday.co/wp-content/uploads/2024/06/promo-bioskop-xxi-juni-2024-21cineplexcom-6662a36c328bd.webp"
+                class="d-block w-100" alt="Promo 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://foto.kontan.co.id/6HwblSfIEgNZqEGPXYFRaY2H3Hk=/smart/2024/05/31/792371046p.jpg"
+                class="d-block w-100" alt="Promo 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://assets.banksaqu.co.id/WEB_Weekly_Deals_XXI_4_4540ce7194/WEB_Weekly_Deals_XXI_4_4540ce7194.jpg"
+                class="d-block w-100" alt="Promo 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 GoldenCinema. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
